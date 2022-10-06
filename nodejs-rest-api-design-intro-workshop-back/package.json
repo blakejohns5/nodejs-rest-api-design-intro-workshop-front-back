@@ -1,0 +1,50 @@
+{
+  "name": "nodejs-rest-api-design-intro-workshop",
+  "version": "1.0.0",
+  "description": "Assembler School: Node.js REST API Design Intro Workshop",
+  "keywords": [
+    "mongodb"
+  ],
+  "author": "Dani Lucaci <dani@assemblerschool.com>",
+  "license": "MIT",
+  "private": "true",
+  "main": "src/index.js",
+  "scripts": {
+    "dev:workshop": "nodemon src/00-workshop-demo-files/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest --watch",
+    "test:01:crud-api": "jest -t 'books crud controllers' --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/assembler-school/nodejs-rest-api-design-intro-workshop.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.12.0",
+    "helmet": "^4.3.1",
+    "loglevel": "^1.7.1",
+    "mongoose": "^5.11.9",
+    "npm-check-updates": "^10.2.5",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@types/jest": "^26.0.19",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.15.0",
+    "jest": "^26.6.3",
+    "mongodb-memory-server": "^6.9.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19",
+    "prettier": "2.2.1",
+    "supertest": "^6.0.1"
+  }
+}
